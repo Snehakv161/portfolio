@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sneha KV - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sneha KV</h1>
+        <p>Email: <a href="mailto:snehakv161@gmail.com">snehakv161@gmail.com</a></p>
+        <p>Phone: +91 6238667441 - Kozhikode</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#career-objective">Career Objective</a></li>
+            <li><a href="#coursework">Coursework</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#activities">Activities</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="career-objective">
+            <h2>Career Objective</h2>
+            <p>Enthusiastic and dedicated B.Tech student with a strong foundation in computer science and design. Currently enrolled in an app development internship, eager to leverage technical skills in C++, C, JavaScript, and HTML to contribute effectively to software development projects.</p>
+        </section>
+        <section id="coursework">
+            <h2>Coursework</h2>
+            <h3>Internship at Tomercon Developers</h3>
+            <ul>
+                <li>Contributing to the development of mobile applications</li>
+                <li>Collaborating with team members to troubleshoot and debug code</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Successfully completed basic coding projects</li>
+                <li>Developed personal projects to practice programming languages</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>B.Tech, GEC Kozhikode (currently enrolled)</li>
+                <li>Higher Secondary, Rahmania HSS<br>Percentage: 97% (2021-23)</li>
+                <li>High School, BEM GHSS<br>Percentage: 100% (2020)</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Programming Languages: C++, HTML, JavaScript<br>Leadership, Interpersonal Skills, Strategic Planning, Content Strategy, Time Management, Project Management</p>
+        </section>
+        <section id="languages">
+            <h2>Languages Known</h2>
+            <p>English, Malayalam, Hindi</p>
+        </section>
+        <section id="activities">
+            <h2>Membership and Activities</h2>
+            <ul>
+                <li>NSS Volunteer (2021-23)</li>
+                <li>IEDC Member</li>
+            </ul>
+        </section>
+    </main>
+    
+    <script>
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('nav a');
+            for (const link of links) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    document.getElementById(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
